@@ -12,6 +12,9 @@ use App\Livewire\Settings\Profile;
 use App\Livewire\Settings\TwoFactor;
 use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Features;
+use App\Livewire\PrivacyPolicy;
+use App\Livewire\TermsOfService;
+use App\Livewire\Faqs;
 
 Route::get('/', Home::class)->name('home');
 Route::get('/about', About::class)->name('about');
@@ -19,7 +22,9 @@ Route::get('/projects', Projects::class)->name('projects');
 Route::get('/page', Page::class)->name('page');
 Route::get('/blog', Blog::class)->name('blog');
 Route::get('/contact', Contact::class)->name('contact');
-
+Route::get('/privacy-policy', PrivacyPolicy::class)->name('privacy-policy');
+Route::get('/terms-of-service', TermsOfService::class)->name('terms-of-service');
+Route::get('/faqs', Faqs::class)->name('faqs');
 
 
 Route::view('dashboard', 'dashboard')
