@@ -23,6 +23,8 @@ class ContactMessage extends Model
         'subject',
         'message',
         'uploaded_at',
+        'admin_email_sent_at',
+        'user_email_sent_at',
     ];
 
     /**
@@ -32,6 +34,8 @@ class ContactMessage extends Model
      */
     protected $casts = [
         'uploaded_at' => 'datetime',
+        'admin_email_sent_at' => 'datetime',
+        'user_email_sent_at' => 'datetime',
     ];
 
     /**

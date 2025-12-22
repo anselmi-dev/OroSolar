@@ -9,10 +9,7 @@ class Page extends Component
 {
     public function render()
     {
-        $meta = seo('page');
-
-        return view('livewire.page')
-            ->with(['title' => $meta->title]);
+        return view('livewire.page');
     }
 }
 

@@ -55,10 +55,7 @@ class Faqs extends Component
 
     public function render()
     {
-        $meta = seo('faqs');
-
-        return view('livewire.faqs')
-            ->with(['title' => $meta->title]);
+        return view('livewire.faqs');
     }
 }
 

@@ -9,10 +9,7 @@ class Projects extends Component
 {
     public function render()
     {
-        $meta = seo('projects');
-
-        return view('livewire.projects')
-            ->with(['title' => $meta->title]);
+        return view('livewire.projects');
     }
 }
 

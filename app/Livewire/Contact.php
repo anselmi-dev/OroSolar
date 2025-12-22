@@ -75,10 +75,7 @@ class Contact extends Component
 
     public function render()
     {
-        $meta = seo('contact');
-
-        return view('livewire.contact')
-            ->with(['title' => $meta->title]);
+        return view('livewire.contact');
     }
 }
 

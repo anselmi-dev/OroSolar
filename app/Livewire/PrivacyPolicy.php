@@ -9,10 +9,7 @@ class PrivacyPolicy extends Component
 {
     public function render()
     {
-        $meta = seo('privacy-policy');
-
-        return view('livewire.privacy-policy')
-            ->with(['title' => $meta->title]);
+        return view('livewire.privacy-policy');
     }
 }
 

@@ -10,10 +10,7 @@ class About extends Component
 {
     public function render()
     {
-        $meta = seo('about');
-
-        return view('livewire.about')
-            ->with(['title' => $meta->title]);
+        return view('livewire.about');
     }
 
     #[Computed]

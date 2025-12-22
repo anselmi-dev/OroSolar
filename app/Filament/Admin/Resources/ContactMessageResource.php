@@ -98,6 +98,16 @@ class ContactMessageResource extends Resource
                             ->label('Subido a Google Sheets')
                             ->disabled()
                             ->displayFormat('d/m/Y H:i'),
+
+                        Forms\Components\DateTimePicker::make('admin_email_sent_at')
+                            ->label('Email Enviado al Admin')
+                            ->disabled()
+                            ->displayFormat('d/m/Y H:i'),
+
+                        Forms\Components\DateTimePicker::make('user_email_sent_at')
+                            ->label('Email Enviado al Usuario')
+                            ->disabled()
+                            ->displayFormat('d/m/Y H:i'),
                     ])
                     ->columns(3)
                     ->collapsed(),
@@ -147,6 +157,26 @@ class ContactMessageResource extends Resource
                     ->trueColor('success')
                     ->falseColor('danger')
                     ->sortable(),
+
+                Tables\Columns\IconColumn::make('admin_email_sent_at')
+                    ->label('Email Admin')
+                    ->boolean()
+                    ->trueIcon('heroicon-o-check-circle')
+                    ->falseIcon('heroicon-o-x-circle')
+                    ->trueColor('success')
+                    ->falseColor('danger')
+                    ->sortable()
+                    ->toggleable(),
+
+                Tables\Columns\IconColumn::make('user_email_sent_at')
+                    ->label('Email Usuario')
+                    ->boolean()
+                    ->trueIcon('heroicon-o-check-circle')
+                    ->falseIcon('heroicon-o-x-circle')
+                    ->trueColor('success')
+                    ->falseColor('danger')
+                    ->sortable()
+                    ->toggleable(),
 
                 Tables\Columns\TextColumn::make('created_at')
                     ->label('Fecha')

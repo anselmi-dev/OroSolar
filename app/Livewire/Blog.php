@@ -9,10 +9,7 @@ class Blog extends Component
 {
     public function render()
     {
-        $meta = seo('blog');
-
-        return view('livewire.blog')
-            ->with(['title' => $meta->title]);
+        return view('livewire.blog');
     }
 }
 
