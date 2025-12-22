@@ -24,7 +24,7 @@ class SendContactFormEmail
     public function handle(ContactFormSubmitted $event, ?string $adminEmail = null): void
     {
         if (is_null($adminEmail))
-            $adminEmail = app()->environment('production') ? config('mail.from.address') : 'carlosanselmi2@gmail.com';
+            $adminEmail = app()->environment('production') ? setting('email', 'info@orosolar.com') : 'carlosanselmi2@gmail.com';
 
         // Enviar correo al administrador
         try {
