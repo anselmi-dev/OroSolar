@@ -7,6 +7,7 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
+use App\Models\ContactMessage;
 
 class ContactFormMail extends Mailable
 {
@@ -16,11 +17,7 @@ class ContactFormMail extends Mailable
      * Create a new message instance.
      */
     public function __construct(
-        public string $name,
-        public string $email,
-        public string $phone,
-        public string $subject,
-        public string $message,
+        public ContactMessage $contactMessage,
     ) {
         //
     }
@@ -31,8 +28,8 @@ class ContactFormMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Nuevo mensaje de contacto: ' . $this->subject,
-            replyTo: [$this->email],
+            subject: 'Nuevo mensaje de contacto: ' . $this->contactMessage->subject,
+            replyTo: [$this->contactMessage->email],
         );
     }
 
@@ -44,11 +41,11 @@ class ContactFormMail extends Mailable
         return new Content(
             markdown: 'emails.contact-form',
             with: [
-                'name' => $this->name,
-                'email' => $this->email,
-                'phone' => $this->phone,
-                'subject' => $this->subject,
-                'message' => $this->message,
+                'name' => $this->contactMessage->name,
+                'email' => $this->contactMessage->email,
+                'phone' => $this->contactMessage->phone,
+                'subject' => $this->contactMessage->subject,
+                'message' => $this->contactMessage->message,
             ],
         );
     }

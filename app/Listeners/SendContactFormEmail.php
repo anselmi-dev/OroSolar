@@ -21,13 +21,13 @@ class SendContactFormEmail
      */
     public function handle(ContactFormSubmitted $event): void
     {
-        Mail::to(config('mail.from.address'))
+        $email = app()->environment('production') ? config('mail.from.address') : 'carlosanselmi2@gmail.com';
+
+        logger($email);
+
+        Mail::to($email)
             ->send(new ContactFormMail(
-                name: $event->contactMessage->name,
-                email: $event->contactMessage->email,
-                phone: $event->contactMessage->phone,
-                subject: $event->contactMessage->subject,
-                message: $event->contactMessage->message,
+                $event->contactMessage,
             ));
     }
 }
