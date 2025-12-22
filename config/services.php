@@ -35,4 +35,12 @@ return [
         ],
     ],
 
+    'google' => [
+        'sheets' => [
+            'spreadsheet_id' => env('GOOGLE_SHEETS_SPREADSHEET_ID'),
+            'range' => env('GOOGLE_SHEETS_RANGE', 'Sheet1!A:F'),
+            'credentials_path' => env('GOOGLE_SHEETS_CREDENTIALS_PATH', 'app/google-credentials.json'),
+        ],
+    ],
+
 ];

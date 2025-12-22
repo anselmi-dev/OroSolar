@@ -1,8 +1,12 @@
+@section('seo')
+<x-layouts.seo :seo="seo('terms-of-service')" />
+@endsection
+
 <div class="min-h-screen bg-black text-white py-20 px-10">
     <div class="max-w-7xl mx-auto">
         <!-- Header Section -->
         <div class="mb-16" data-aos="fade-up">
-            <span class="text-yellow-400 font-semibold tracking-wide block mb-4">
+            <span class="text-app-400 font-semibold tracking-wide block mb-4">
                 Términos y Condiciones
             </span>
             <h1 class="text-5xl lg:text-6xl font-extrabold mb-6">Terms of Service</h1>
@@ -19,7 +23,7 @@
 
             <!-- Section 1 -->
             <section data-aos="fade-up" data-aos-delay="100">
-                <h2 class="text-2xl font-bold mb-4 text-yellow-400">1. Aceptación de los Términos</h2>
+                <h2 class="text-2xl font-bold mb-4 text-app-400">1. Aceptación de los Términos</h2>
                 <div class="space-y-4 text-neutral-300 leading-relaxed">
                     <p>
                         Al acceder y utilizar los servicios de Orosolar, usted acepta estar sujeto a estos términos y condiciones de servicio, así como a todas las leyes y regulaciones aplicables. Si no está de acuerdo con alguno de estos términos, no debe utilizar nuestros servicios.
@@ -32,7 +36,7 @@
 
             <!-- Section 2 -->
             <section data-aos="fade-up" data-aos-delay="200">
-                <h2 class="text-2xl font-bold mb-4 text-yellow-400">2. Descripción de los Servicios</h2>
+                <h2 class="text-2xl font-bold mb-4 text-app-400">2. Descripción de los Servicios</h2>
                 <div class="space-y-4 text-neutral-300 leading-relaxed">
                     <p>
                         Orosolar proporciona servicios relacionados con energía renovable, incluyendo pero no limitado a:
@@ -52,7 +56,7 @@
 
             <!-- Section 3 -->
             <section data-aos="fade-up" data-aos-delay="300">
-                <h2 class="text-2xl font-bold mb-4 text-yellow-400">3. Uso del Sitio Web</h2>
+                <h2 class="text-2xl font-bold mb-4 text-app-400">3. Uso del Sitio Web</h2>
                 <div class="space-y-4 text-neutral-300 leading-relaxed">
                     <p>Al utilizar nuestro sitio web, usted se compromete a:</p>
                     <ul class="list-disc list-inside space-y-2 ml-4">
@@ -71,7 +75,7 @@
 
             <!-- Section 4 -->
             <section data-aos="fade-up" data-aos-delay="400">
-                <h2 class="text-2xl font-bold mb-4 text-yellow-400">4. Propiedad Intelectual</h2>
+                <h2 class="text-2xl font-bold mb-4 text-app-400">4. Propiedad Intelectual</h2>
                 <div class="space-y-4 text-neutral-300 leading-relaxed">
                     <p>
                         Todo el contenido del sitio web, incluyendo pero no limitado a textos, gráficos, logotipos, iconos, imágenes, clips de audio, descargas digitales y compilaciones de datos, es propiedad de Orosolar o de sus proveedores de contenido y está protegido por las leyes de propiedad intelectual.
@@ -84,7 +88,7 @@
 
             <!-- Section 5 -->
             <section data-aos="fade-up" data-aos-delay="500">
-                <h2 class="text-2xl font-bold mb-4 text-yellow-400">5. Cotizaciones y Contratos</h2>
+                <h2 class="text-2xl font-bold mb-4 text-app-400">5. Cotizaciones y Contratos</h2>
                 <div class="space-y-4 text-neutral-300 leading-relaxed">
                     <p>
                         Las cotizaciones proporcionadas por Orosolar son válidas por el período especificado en la cotización. Los precios están sujetos a cambios sin previo aviso hasta que se firme un contrato formal.
@@ -100,7 +104,7 @@
 
             <!-- Section 6 -->
             <section data-aos="fade-up" data-aos-delay="600">
-                <h2 class="text-2xl font-bold mb-4 text-yellow-400">6. Pagos y Facturación</h2>
+                <h2 class="text-2xl font-bold mb-4 text-app-400">6. Pagos y Facturación</h2>
                 <div class="space-y-4 text-neutral-300 leading-relaxed">
                     <p>
                         Los términos de pago se especificarán en el contrato de servicio. Generalmente:
@@ -119,13 +123,13 @@
 
             <!-- Section 7 -->
             <section data-aos="fade-up" data-aos-delay="700">
-                <h2 class="text-2xl font-bold mb-4 text-yellow-400">7. Garantías y Limitaciones</h2>
+                <h2 class="text-2xl font-bold mb-4 text-app-400">7. Garantías y Limitaciones</h2>
                 <div class="space-y-4 text-neutral-300 leading-relaxed">
                     <p>
                         Orosolar garantiza que los servicios se realizarán con profesionalismo y de acuerdo con los estándares de la industria. Ofrecemos garantías específicas según se detalle en el contrato de servicio.
                     </p>
                     <p>
-                        <strong class="text-yellow-400">Limitación de responsabilidad:</strong> En la máxima medida permitida por la ley, Orosolar no será responsable de daños indirectos, incidentales, especiales, consecuentes o punitivos, incluyendo pero no limitado a pérdida de beneficios, datos o uso.
+                        <strong class="text-app-400">Limitación de responsabilidad:</strong> En la máxima medida permitida por la ley, Orosolar no será responsable de daños indirectos, incidentales, especiales, consecuentes o punitivos, incluyendo pero no limitado a pérdida de beneficios, datos o uso.
                     </p>
                     <p>
                         Nuestra responsabilidad total no excederá el monto total pagado por usted por los servicios específicos que dieron lugar a la reclamación.
@@ -135,7 +139,7 @@
 
             <!-- Section 8 -->
             <section data-aos="fade-up" data-aos-delay="800">
-                <h2 class="text-2xl font-bold mb-4 text-yellow-400">8. Cancelación y Reembolsos</h2>
+                <h2 class="text-2xl font-bold mb-4 text-app-400">8. Cancelación y Reembolsos</h2>
                 <div class="space-y-4 text-neutral-300 leading-relaxed">
                     <p>
                         Las cancelaciones deben realizarse por escrito según los términos especificados en el contrato de servicio. Las políticas de cancelación y reembolso varían según el tipo de servicio y la etapa del proyecto.
@@ -148,7 +152,7 @@
 
             <!-- Section 9 -->
             <section data-aos="fade-up" data-aos-delay="900">
-                <h2 class="text-2xl font-bold mb-4 text-yellow-400">9. Permisos y Regulaciones</h2>
+                <h2 class="text-2xl font-bold mb-4 text-app-400">9. Permisos y Regulaciones</h2>
                 <div class="space-y-4 text-neutral-300 leading-relaxed">
                     <p>
                         El cliente es responsable de obtener todos los permisos, licencias y aprobaciones necesarias de las autoridades locales antes de la instalación. Orosolar puede asistir en el proceso, pero la responsabilidad final recae en el cliente.
@@ -161,7 +165,7 @@
 
             <!-- Section 10 -->
             <section data-aos="fade-up" data-aos-delay="1000">
-                <h2 class="text-2xl font-bold mb-4 text-yellow-400">10. Indemnización</h2>
+                <h2 class="text-2xl font-bold mb-4 text-app-400">10. Indemnización</h2>
                 <div class="space-y-4 text-neutral-300 leading-relaxed">
                     <p>
                         Usted acepta indemnizar, defender y mantener indemne a Orosolar, sus afiliados, directores, empleados y agentes de cualquier reclamo, daño, obligación, pérdida, responsabilidad, costo o deuda, y gastos (incluyendo honorarios de abogados) que surjan de:
@@ -177,7 +181,7 @@
 
             <!-- Section 11 -->
             <section data-aos="fade-up" data-aos-delay="1100">
-                <h2 class="text-2xl font-bold mb-4 text-yellow-400">11. Fuerza Mayor</h2>
+                <h2 class="text-2xl font-bold mb-4 text-app-400">11. Fuerza Mayor</h2>
                 <div class="space-y-4 text-neutral-300 leading-relaxed">
                     <p>
                         Orosolar no será responsable por ningún retraso o incumplimiento en el desempeño de nuestras obligaciones bajo estos términos que resulte de causas fuera de nuestro control razonable, incluyendo pero no limitado a desastres naturales, guerra, terrorismo, huelgas, escasez de materiales, fallas en el suministro de energía, o regulaciones gubernamentales.
@@ -187,7 +191,7 @@
 
             <!-- Section 12 -->
             <section data-aos="fade-up" data-aos-delay="1200">
-                <h2 class="text-2xl font-bold mb-4 text-yellow-400">12. Resolución de Disputas</h2>
+                <h2 class="text-2xl font-bold mb-4 text-app-400">12. Resolución de Disputas</h2>
                 <div class="space-y-4 text-neutral-300 leading-relaxed">
                     <p>
                         Cualquier disputa que surja de o esté relacionada con estos términos o nuestros servicios se resolverá mediante negociación de buena fe. Si no se puede llegar a un acuerdo, las partes acuerdan someterse a mediación antes de iniciar procedimientos legales.
@@ -200,34 +204,34 @@
 
             <!-- Section 13 -->
             <section data-aos="fade-up" data-aos-delay="1300">
-                <h2 class="text-2xl font-bold mb-4 text-yellow-400">13. Disposiciones Generales</h2>
+                <h2 class="text-2xl font-bold mb-4 text-app-400">13. Disposiciones Generales</h2>
                 <div class="space-y-4 text-neutral-300 leading-relaxed">
                     <p>
-                        <strong class="text-yellow-400">Divisibilidad:</strong> Si alguna disposición de estos términos se considera inválida o inaplicable, las disposiciones restantes permanecerán en pleno vigor y efecto.
+                        <strong class="text-app-400">Divisibilidad:</strong> Si alguna disposición de estos términos se considera inválida o inaplicable, las disposiciones restantes permanecerán en pleno vigor y efecto.
                     </p>
                     <p>
-                        <strong class="text-yellow-400">Renuncia:</strong> El hecho de que no ejerzamos cualquier derecho o disposición de estos términos no constituirá una renuncia a tal derecho o disposición.
+                        <strong class="text-app-400">Renuncia:</strong> El hecho de que no ejerzamos cualquier derecho o disposición de estos términos no constituirá una renuncia a tal derecho o disposición.
                     </p>
                     <p>
-                        <strong class="text-yellow-400">Cesión:</strong> Usted no puede ceder o transferir estos términos sin nuestro consentimiento previo por escrito. Podemos ceder estos términos sin restricción.
+                        <strong class="text-app-400">Cesión:</strong> Usted no puede ceder o transferir estos términos sin nuestro consentimiento previo por escrito. Podemos ceder estos términos sin restricción.
                     </p>
                     <p>
-                        <strong class="text-yellow-400">Acuerdo completo:</strong> Estos términos, junto con el contrato de servicio (si aplica), constituyen el acuerdo completo entre usted y Orosolar respecto al uso de nuestros servicios.
+                        <strong class="text-app-400">Acuerdo completo:</strong> Estos términos, junto con el contrato de servicio (si aplica), constituyen el acuerdo completo entre usted y Orosolar respecto al uso de nuestros servicios.
                     </p>
                 </div>
             </section>
 
             <!-- Section 14 -->
             <section data-aos="fade-up" data-aos-delay="1400">
-                <h2 class="text-2xl font-bold mb-4 text-yellow-400">14. Contacto</h2>
+                <h2 class="text-2xl font-bold mb-4 text-app-400">14. Contacto</h2>
                 <div class="space-y-4 text-neutral-300 leading-relaxed">
                     <p>
                         Si tiene preguntas sobre estos términos de servicio, puede contactarnos:
                     </p>
                     <div class="mt-6 space-y-3">
-                        <p><strong class="text-yellow-400">Email:</strong> legal@orosolar.com</p>
-                        <p><strong class="text-yellow-400">Teléfono:</strong> +56 9 XXXX XXXX</p>
-                        <p><strong class="text-yellow-400">Dirección:</strong> [Su dirección aquí]</p>
+                        <p><strong class="text-app-400">Email:</strong> legal@orosolar.com</p>
+                        <p><strong class="text-app-400">Teléfono:</strong> +56 9 XXXX XXXX</p>
+                        <p><strong class="text-app-400">Dirección:</strong> [Su dirección aquí]</p>
                     </div>
                 </div>
             </section>
@@ -248,7 +252,7 @@
                 <!-- Content -->
                 <div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-10 px-16 py-20">
                     <div>
-                        <span class="text-yellow-400 font-semibold block mb-3">
+                        <span class="text-app-400 font-semibold block mb-3">
                             ¿Tienes preguntas sobre nuestros términos?
                         </span>
                         <h3 class="text-3xl lg:text-4xl font-extrabold">
@@ -261,7 +265,7 @@
 
                     <a
                         href="{{ route('contact') }}"
-                        class="bg-white text-black px-10 py-4 rounded font-semibold hover:bg-yellow-400 transition whitespace-nowrap"
+                        class="bg-white text-black px-10 py-4 rounded font-semibold hover:bg-app-400 transition whitespace-nowrap"
                     >
                         CONTACTAR AHORA
                     </a>

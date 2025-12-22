@@ -2,7 +2,7 @@
     <div class="max-w-7xl mx-auto">
         <!-- Header Section -->
         <div class="mb-16" data-aos="fade-up">
-            <span class="text-yellow-400 font-semibold tracking-wide block mb-4">
+            <span class="text-app-400 font-semibold tracking-wide block mb-4">
                 Preguntas Frecuentes
             </span>
             <h1 class="text-5xl lg:text-6xl font-extrabold mb-6">FAQs</h1>
@@ -15,21 +15,21 @@
         <div class="max-w-full mx-auto space-y-4">
             @foreach($this->faqs as $index => $faq)
                 <div
-                    class="bg-neutral-900 rounded-xl overflow-hidden border border-neutral-800 transition-all duration-300 hover:border-yellow-400/50 {{ $openIndex === $index ? 'border-yellow-400/50' : '' }}"
+                    class="bg-neutral-900 rounded-xl overflow-hidden border border-neutral-800 transition-all duration-300 hover:border-app-400/50 {{ $openIndex === $index ? 'border-app-400/50' : '' }}"
                     data-aos="fade-up"
                     data-aos-delay="{{ $index * 50 }}"
                 >
                     <!-- Question Header -->
                     <button
                         wire:click="toggle({{ $index }})"
-                        class="w-full px-8 py-6 flex items-center justify-between text-left focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2 focus:ring-offset-black rounded-xl"
+                        class="w-full px-8 py-6 flex items-center justify-between text-left focus:outline-none focus:ring-2 focus:ring-app-400 focus:ring-offset-2 focus:ring-offset-black rounded-xl"
                     >
                         <h3 class="text-xl font-semibold pr-8">
                             {{ $faq['question'] }}
                         </h3>
                         <div class="flex-shrink-0">
                             <svg
-                                class="w-6 h-6 text-yellow-400 transition-transform duration-300 {{ $openIndex === $index ? 'rotate-180' : '' }}"
+                                class="w-6 h-6 text-app-400 transition-transform duration-300 {{ $openIndex === $index ? 'rotate-180' : '' }}"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
@@ -70,7 +70,7 @@
                 <!-- Content -->
                 <div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-10 px-16 py-20">
                     <div>
-                        <span class="text-yellow-400 font-semibold block mb-3">
+                        <span class="text-app-400 font-semibold block mb-3">
                             ¿Tienes más preguntas?
                         </span>
                         <h3 class="text-3xl lg:text-4xl font-extrabold">
@@ -83,7 +83,7 @@
 
                     <a
                         href="{{ route('contact') }}"
-                        class="bg-white text-black px-10 py-4 rounded font-semibold hover:bg-yellow-400 transition whitespace-nowrap"
+                        class="bg-white text-black px-10 py-4 rounded font-semibold hover:bg-app-400 transition whitespace-nowrap"
                     >
                         CONTACTAR AHORA
                     </a>

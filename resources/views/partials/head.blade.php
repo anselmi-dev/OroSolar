@@ -1,11 +1,19 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>{{ $title ?? config('app.name') }}</title>
+@php
+    $color = setting('color', '#f7a826');
+    $title = setting('site_name', config('app.name'));
+@endphp
 
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<title>{{ $title }}</title>
+<link rel="icon" href="{{ asset('favicon.svg') }}" sizes="any">
+<link rel="mask-icon" href="{{ asset('favicon.svg') }}" color="{{ $color }}">
+<link rel="icon" type="image/svg+xml" href="{{ asset('favicon.svg') }}">
+<meta name="theme-color" content="{{ $color }}">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+@yield('seo')
 
 <link rel="preconnect" href="https://fonts.bunny.net">
 <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600" rel="stylesheet" />
@@ -14,4 +22,11 @@
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 @vite(['resources/css/app.css', 'resources/js/app.js'])
+
 @fluxAppearance
+
+<style>
+    :root {
+        --color-app-400: {{ $color }};
+    }
+</style>

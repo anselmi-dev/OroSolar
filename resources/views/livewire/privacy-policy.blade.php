@@ -2,7 +2,7 @@
     <div class="max-w-7xl mx-auto">
         <!-- Header Section -->
         <div class="mb-16" data-aos="fade-up">
-            <span class="text-yellow-400 font-semibold tracking-wide block mb-4">
+            <span class="text-app-400 font-semibold tracking-wide block mb-4">
                 Política de Privacidad
             </span>
             <h1 class="text-5xl lg:text-6xl font-extrabold mb-6">Privacy Policy</h1>
@@ -19,7 +19,7 @@
 
             <!-- Section 1 -->
             <section data-aos="fade-up" data-aos-delay="100">
-                <h2 class="text-2xl font-bold mb-4 text-yellow-400">1. Información que Recopilamos</h2>
+                <h2 class="text-2xl font-bold mb-4 text-app-400">1. Información que Recopilamos</h2>
                 <div class="space-y-4 text-neutral-300 leading-relaxed">
                     <p>
                         Recopilamos información que usted nos proporciona directamente cuando:
@@ -38,7 +38,7 @@
 
             <!-- Section 2 -->
             <section data-aos="fade-up" data-aos-delay="200">
-                <h2 class="text-2xl font-bold mb-4 text-yellow-400">2. Uso de la Información</h2>
+                <h2 class="text-2xl font-bold mb-4 text-app-400">2. Uso de la Información</h2>
                 <div class="space-y-4 text-neutral-300 leading-relaxed">
                     <p>Utilizamos la información recopilada para:</p>
                     <ul class="list-disc list-inside space-y-2 ml-4">
@@ -54,22 +54,22 @@
 
             <!-- Section 3 -->
             <section data-aos="fade-up" data-aos-delay="300">
-                <h2 class="text-2xl font-bold mb-4 text-yellow-400">3. Compartir Información</h2>
+                <h2 class="text-2xl font-bold mb-4 text-app-400">3. Compartir Información</h2>
                 <div class="space-y-4 text-neutral-300 leading-relaxed">
                     <p>
                         No vendemos, alquilamos ni compartimos su información personal con terceros, excepto en las siguientes circunstancias:
                     </p>
                     <ul class="list-disc list-inside space-y-2 ml-4">
-                        <li><strong class="text-yellow-400">Proveedores de servicios:</strong> Compartimos información con proveedores que nos ayudan a operar nuestro negocio (hosting, análisis, procesamiento de pagos)</li>
-                        <li><strong class="text-yellow-400">Cumplimiento legal:</strong> Cuando sea requerido por ley o para proteger nuestros derechos legales</li>
-                        <li><strong class="text-yellow-400">Con su consentimiento:</strong> Cuando usted nos autoriza explícitamente a compartir su información</li>
+                        <li><strong class="text-app-400">Proveedores de servicios:</strong> Compartimos información con proveedores que nos ayudan a operar nuestro negocio (hosting, análisis, procesamiento de pagos)</li>
+                        <li><strong class="text-app-400">Cumplimiento legal:</strong> Cuando sea requerido por ley o para proteger nuestros derechos legales</li>
+                        <li><strong class="text-app-400">Con su consentimiento:</strong> Cuando usted nos autoriza explícitamente a compartir su información</li>
                     </ul>
                 </div>
             </section>
 
             <!-- Section 4 -->
             <section data-aos="fade-up" data-aos-delay="400">
-                <h2 class="text-2xl font-bold mb-4 text-yellow-400">4. Seguridad de los Datos</h2>
+                <h2 class="text-2xl font-bold mb-4 text-app-400">4. Seguridad de los Datos</h2>
                 <div class="space-y-4 text-neutral-300 leading-relaxed">
                     <p>
                         Implementamos medidas de seguridad técnicas y organizativas apropiadas para proteger su información personal contra acceso no autorizado, alteración, divulgación o destrucción. Sin embargo, ningún método de transmisión por Internet o almacenamiento electrónico es 100% seguro.
@@ -82,7 +82,7 @@
 
             <!-- Section 5 -->
             <section data-aos="fade-up" data-aos-delay="500">
-                <h2 class="text-2xl font-bold mb-4 text-yellow-400">5. Cookies y Tecnologías de Seguimiento</h2>
+                <h2 class="text-2xl font-bold mb-4 text-app-400">5. Cookies y Tecnologías de Seguimiento</h2>
                 <div class="space-y-4 text-neutral-300 leading-relaxed">
                     <p>
                         Utilizamos cookies y tecnologías similares para mejorar su experiencia en nuestro sitio web, analizar el tráfico y personalizar el contenido. Puede configurar su navegador para rechazar cookies, aunque esto puede afectar algunas funcionalidades del sitio.
@@ -95,16 +95,16 @@
 
             <!-- Section 6 -->
             <section data-aos="fade-up" data-aos-delay="600">
-                <h2 class="text-2xl font-bold mb-4 text-yellow-400">6. Sus Derechos</h2>
+                <h2 class="text-2xl font-bold mb-4 text-app-400">6. Sus Derechos</h2>
                 <div class="space-y-4 text-neutral-300 leading-relaxed">
                     <p>Usted tiene derecho a:</p>
                     <ul class="list-disc list-inside space-y-2 ml-4">
-                        <li><strong class="text-yellow-400">Acceder:</strong> Solicitar una copia de la información personal que tenemos sobre usted</li>
-                        <li><strong class="text-yellow-400">Rectificar:</strong> Corregir información inexacta o incompleta</li>
-                        <li><strong class="text-yellow-400">Eliminar:</strong> Solicitar la eliminación de su información personal</li>
-                        <li><strong class="text-yellow-400">Oponerse:</strong> Oponerse al procesamiento de su información personal</li>
-                        <li><strong class="text-yellow-400">Portabilidad:</strong> Recibir su información en un formato estructurado</li>
-                        <li><strong class="text-yellow-400">Retirar consentimiento:</strong> Retirar su consentimiento en cualquier momento</li>
+                        <li><strong class="text-app-400">Acceder:</strong> Solicitar una copia de la información personal que tenemos sobre usted</li>
+                        <li><strong class="text-app-400">Rectificar:</strong> Corregir información inexacta o incompleta</li>
+                        <li><strong class="text-app-400">Eliminar:</strong> Solicitar la eliminación de su información personal</li>
+                        <li><strong class="text-app-400">Oponerse:</strong> Oponerse al procesamiento de su información personal</li>
+                        <li><strong class="text-app-400">Portabilidad:</strong> Recibir su información en un formato estructurado</li>
+                        <li><strong class="text-app-400">Retirar consentimiento:</strong> Retirar su consentimiento en cualquier momento</li>
                     </ul>
                     <p class="mt-4">
                         Para ejercer estos derechos, puede contactarnos a través de los medios indicados en la sección de contacto.
@@ -114,7 +114,7 @@
 
             <!-- Section 7 -->
             <section data-aos="fade-up" data-aos-delay="700">
-                <h2 class="text-2xl font-bold mb-4 text-yellow-400">7. Retención de Datos</h2>
+                <h2 class="text-2xl font-bold mb-4 text-app-400">7. Retención de Datos</h2>
                 <div class="space-y-4 text-neutral-300 leading-relaxed">
                     <p>
                         Conservamos su información personal durante el tiempo necesario para cumplir con los propósitos descritos en esta política, a menos que la ley requiera o permita un período de retención más largo. Cuando ya no necesitemos su información, la eliminaremos de forma segura.
@@ -124,7 +124,7 @@
 
             <!-- Section 8 -->
             <section data-aos="fade-up" data-aos-delay="800">
-                <h2 class="text-2xl font-bold mb-4 text-yellow-400">8. Menores de Edad</h2>
+                <h2 class="text-2xl font-bold mb-4 text-app-400">8. Menores de Edad</h2>
                 <div class="space-y-4 text-neutral-300 leading-relaxed">
                     <p>
                         Nuestros servicios están dirigidos a personas mayores de 18 años. No recopilamos intencionalmente información personal de menores de edad. Si descubrimos que hemos recopilado información de un menor sin el consentimiento de sus padres, tomaremos medidas para eliminar esa información.
@@ -134,7 +134,7 @@
 
             <!-- Section 9 -->
             <section data-aos="fade-up" data-aos-delay="900">
-                <h2 class="text-2xl font-bold mb-4 text-yellow-400">9. Cambios a esta Política</h2>
+                <h2 class="text-2xl font-bold mb-4 text-app-400">9. Cambios a esta Política</h2>
                 <div class="space-y-4 text-neutral-300 leading-relaxed">
                     <p>
                         Podemos actualizar esta política de privacidad ocasionalmente. Le notificaremos sobre cambios significativos publicando la nueva política en esta página y actualizando la fecha de "Última actualización". Le recomendamos revisar esta política periódicamente.
@@ -144,15 +144,15 @@
 
             <!-- Section 10 -->
             <section data-aos="fade-up" data-aos-delay="1000">
-                <h2 class="text-2xl font-bold mb-4 text-yellow-400">10. Contacto</h2>
+                <h2 class="text-2xl font-bold mb-4 text-app-400">10. Contacto</h2>
                 <div class="space-y-4 text-neutral-300 leading-relaxed">
                     <p>
                         Si tiene preguntas, inquietudes o solicitudes relacionadas con esta política de privacidad o el manejo de sus datos personales, puede contactarnos:
                     </p>
                     <div class="mt-6 space-y-3">
-                        <p><strong class="text-yellow-400">Email:</strong> privacidad@orosolar.com</p>
-                        <p><strong class="text-yellow-400">Teléfono:</strong> +56 9 XXXX XXXX</p>
-                        <p><strong class="text-yellow-400">Dirección:</strong> [Su dirección aquí]</p>
+                        <p><strong class="text-app-400">Email:</strong> privacidad@orosolar.com</p>
+                        <p><strong class="text-app-400">Teléfono:</strong> +56 9 XXXX XXXX</p>
+                        <p><strong class="text-app-400">Dirección:</strong> [Su dirección aquí]</p>
                     </div>
                 </div>
             </section>
@@ -173,7 +173,7 @@
                 <!-- Content -->
                 <div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-10 px-16 py-20">
                     <div>
-                        <span class="text-yellow-400 font-semibold block mb-3">
+                        <span class="text-app-400 font-semibold block mb-3">
                             ¿Tienes preguntas sobre privacidad?
                         </span>
                         <h3 class="text-3xl lg:text-4xl font-extrabold">
@@ -186,7 +186,7 @@
 
                     <a
                         href="{{ route('contact') }}"
-                        class="bg-white text-black px-10 py-4 rounded font-semibold hover:bg-yellow-400 transition whitespace-nowrap"
+                        class="bg-white text-black px-10 py-4 rounded font-semibold hover:bg-app-400 transition whitespace-nowrap"
                     >
                         CONTACTAR AHORA
                     </a>

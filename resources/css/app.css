@@ -23,13 +23,16 @@
     --color-zinc-900: #171717;
     --color-zinc-950: #0a0a0a;
 
-
-    --color-yellow-500: #eded1b;
-    --color-yellow-400: #eded1b;
-    --color-yellow-300: #f7a826;
-    --color-yellow-200: #facc15;
-    --color-yellow-100: #fde68a;
-    --color-yellow-50: #fef9c3;
+    --color-app-900: #1a1a1a;
+    --color-app-800: #262626;
+    --color-app-700: #3f3f3f;
+    --color-app-600: #525252;
+    --color-app-500: #737373;
+    --color-app-400: #f7a826;
+    --color-app-300: #facc15;
+    --color-app-200: #facc15;
+    --color-app-100: #fde68a;
+    --color-app-50: #fef9c3;
 
     --color-accent: var(--color-neutral-800);
     --color-accent-content: var(--color-neutral-800);

@@ -3,11 +3,12 @@
 namespace App\Livewire;
 
 use Livewire\Component;
-
+use Livewire\Attributes\Layout;
+#[Layout('components.layouts.web')]
 class Home extends Component
 {
     public function render()
     {
-        return view('livewire.home')->layout('components.layouts.web');
+        return view('livewire.home');
     }
 }

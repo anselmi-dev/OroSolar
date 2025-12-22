@@ -3,12 +3,16 @@
 namespace App\Livewire;
 
 use Livewire\Component;
-
+use Livewire\Attributes\Layout;
+#[Layout('components.layouts.web')]
 class PrivacyPolicy extends Component
 {
     public function render()
     {
-        return view('livewire.privacy-policy')->layout('components.layouts.web');
+        $meta = seo('privacy-policy');
+
+        return view('livewire.privacy-policy')
+            ->with(['title' => $meta->title]);
     }
 }
 

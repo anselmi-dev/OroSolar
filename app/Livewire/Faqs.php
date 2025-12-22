@@ -2,8 +2,10 @@
 
 namespace App\Livewire;
 
+use App\Services\SeoService;
 use Livewire\Component;
-
+use Livewire\Attributes\Layout;
+#[Layout('components.layouts.web')]
 class Faqs extends Component
 {
     public $openIndex = null;
@@ -53,7 +55,10 @@ class Faqs extends Component
 
     public function render()
     {
-        return view('livewire.faqs')->layout('components.layouts.web');
+        $meta = seo('faqs');
+
+        return view('livewire.faqs')
+            ->with(['title' => $meta->title]);
     }
 }
 

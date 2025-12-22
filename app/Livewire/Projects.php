@@ -3,12 +3,16 @@
 namespace App\Livewire;
 
 use Livewire\Component;
-
+use Livewire\Attributes\Layout;
+#[Layout('components.layouts.web')]
 class Projects extends Component
 {
     public function render()
     {
-        return view('livewire.projects')->layout('components.layouts.web');
+        $meta = seo('projects');
+
+        return view('livewire.projects')
+            ->with(['title' => $meta->title]);
     }
 }
 

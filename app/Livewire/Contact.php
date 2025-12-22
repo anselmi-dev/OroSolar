@@ -3,15 +3,22 @@
 namespace App\Livewire;
 
 use App\Events\ContactFormSubmitted;
+use App\Models\ContactMessage;
 use Livewire\Component;
-
+use Livewire\Attributes\Layout;
+#[Layout('components.layouts.web')]
 class Contact extends Component
 {
     public $name = '';
+
     public $email = '';
+
     public $phone = '';
+
     public $subject = '';
+
     public $message = '';
+
     public $success = false;
 
     protected function rules()
@@ -44,14 +51,17 @@ class Contact extends Component
     {
         $this->validate();
 
+        // Guardar el mensaje en la base de datos
+        $contactMessage = ContactMessage::create([
+            'name' => $this->name,
+            'email' => $this->email,
+            'phone' => $this->phone,
+            'subject' => $this->subject,
+            'message' => $this->message,
+        ]);
+
         // Disparar el evento
-        event(new ContactFormSubmitted(
-            name: $this->name,
-            email: $this->email,
-            phone: $this->phone,
-            subject: $this->subject,
-            message: $this->message,
-        ));
+        event(new ContactFormSubmitted($contactMessage));
 
         // Limpiar el formulario
         $this->reset(['name', 'email', 'phone', 'subject', 'message']);
@@ -65,7 +75,10 @@ class Contact extends Component
 
     public function render()
     {
-        return view('livewire.contact')->layout('components.layouts.web');
+        $meta = seo('contact');
+
+        return view('livewire.contact')
+            ->with(['title' => $meta->title]);
     }
 }
 

@@ -21,14 +21,13 @@ class SendContactFormEmail
      */
     public function handle(ContactFormSubmitted $event): void
     {
-        // Enviar correo al administrador
         Mail::to(config('mail.from.address'))
             ->send(new ContactFormMail(
-                name: $event->name,
-                email: $event->email,
-                phone: $event->phone,
-                subject: $event->subject,
-                message: $event->message,
+                name: $event->contactMessage->name,
+                email: $event->contactMessage->email,
+                phone: $event->contactMessage->phone,
+                subject: $event->contactMessage->subject,
+                message: $event->contactMessage->message,
             ));
     }
 }
