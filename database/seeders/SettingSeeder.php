@@ -12,10 +12,29 @@ class SettingSeeder extends Seeder
      */
     public function run(): void
     {
-        Setting::create([
+        Setting::firstOrCreate([
             'key' => 'color',
-            'value' => '#F7A826',
-        ]);
+        ], ['value' => '#F7A826']);
+
+        Setting::firstOrCreate([
+            'key' => 'phone',
+        ], ['value' => '+56939450537']);
+
+        Setting::firstOrCreate([
+            'key' => 'email',
+        ], ['value' => 'info@orosolar.com']);
+
+        Setting::firstOrCreate([
+            'key' => 'address',
+        ], ['value' => 'KLLG St, No.99, Pku City, ID 28289']);
+
+        Setting::firstOrCreate([
+            'key' => 'schedule',
+        ], ['value' => 'Lun - Jue : 09:00 - 17:00']);
+
+        Setting::firstOrCreate([
+            'key' => 'favicon',
+        ], ['value' => null]);
     }
 }
 

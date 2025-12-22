@@ -3,13 +3,15 @@
 
 @php
     $color = setting('color', '#f7a826');
+    $favicon = setting('favicon');
+    $favicon = $favicon ? asset('storage/' . $favicon) : asset('favicon.svg');
     $title = setting('site_name', config('app.name'));
 @endphp
 
 <title>{{ $title }}</title>
-<link rel="icon" href="{{ asset('favicon.svg') }}" sizes="any">
-<link rel="mask-icon" href="{{ asset('favicon.svg') }}" color="{{ $color }}">
-<link rel="icon" type="image/svg+xml" href="{{ asset('favicon.svg') }}">
+<link rel="icon" href="{{ $favicon }}" sizes="any">
+<link rel="mask-icon" href="{{ $favicon }}" color="{{ $color }}">
+<link rel="icon" type="image/svg+xml" href="{{ $favicon }}">
 <meta name="theme-color" content="{{ $color }}">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 

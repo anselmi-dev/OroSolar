@@ -36,10 +36,24 @@ class Settings extends Page implements HasForms
     public function mount(): void
     {
         $color = Setting::get('color', '#F7A826');
-        $favicon = Setting::get('favicon', null);
+
+        $favicon = Setting::get('favicon');
+
+        $phone = Setting::get('phone');
+
+        $email = Setting::get('email');
+
+        $address = Setting::get('address');
+
+        $schedule = Setting::get('schedule');
+
         $this->form->fill([
             'color' => $color,
             'favicon' => $favicon,
+            'phone' => $phone,
+            'email' => $email,
+            'address' => $address,
+            'schedule' => $schedule,
         ]);
     }
 
@@ -52,7 +66,6 @@ class Settings extends Page implements HasForms
                     ->schema([
                         Forms\Components\ColorPicker::make('color')
                             ->label('Color Principal')
-                            ->required()
                             ->default('#F7A826')
                             ->helperText('Este color se utilizará como color principal en toda la aplicación'),
                     ])
@@ -63,26 +76,22 @@ class Settings extends Page implements HasForms
                     ->schema([
                         Forms\Components\TextInput::make('phone')
                             ->label('Teléfono')
-                            ->required()
                             ->maxLength(20)
                             ->columnSpanFull(),
 
                         Forms\Components\TextInput::make('email')
                             ->label('Email')
                             ->email()
-                            ->required()
                             ->maxLength(255)
                             ->columnSpanFull(),
 
                         Forms\Components\TextInput::make('address')
                             ->label('Dirección')
-                            ->required()
                             ->maxLength(255)
                             ->columnSpanFull(),
 
                         Forms\Components\TextInput::make('schedule')
                             ->label('Horario')
-                            ->required()
                             ->maxLength(255)
                             ->columnSpanFull(),
                     ]),

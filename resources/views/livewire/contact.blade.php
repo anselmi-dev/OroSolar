@@ -2,7 +2,8 @@
     <div class="max-w-7xl mx-auto" _data-aos="fade-up">
         <h1 class="text-5xl font-extrabold mb-8">Contáctanos</h1>
         <p class="text-neutral-400 text-lg leading-relaxed mb-5">
-            Ponte en contacto con nosotros para cualquier pregunta o consulta sobre nuestras soluciones de energía renovable.
+            Ponte en contacto con nosotros para cualquier pregunta o consulta sobre nuestras soluciones de energía
+            renovable.
         </p>
         <p class="text-gray-400 text-lg">
             Estamos aquí para ayudarte. Contáctanos a través de cualquiera de nuestros canales de comunicación.
@@ -21,14 +22,14 @@
                 <div class="grid grid-cols-2 gap-4">
                     <div>
                         <input type="text" wire:model="name" placeholder="Tu nombre"
-                                class="w-full bg-transparent border @error('name') border-red-500 @else border-gray-500 @enderror rounded-lg px-4 py-3 text-gray-200 placeholder-gray-400 focus:border-app-400 focus:outline-none">
+                            class="w-full bg-transparent border @error('name') border-red-500 @else border-gray-500 @enderror rounded-lg px-4 py-3 text-gray-200 placeholder-gray-400 focus:border-app-400 focus:outline-none">
                         @error('name')
                             <p class="text-red-400 text-sm mt-1">{{ $message }}</p>
                         @enderror
                     </div>
                     <div>
                         <input type="email" wire:model="email" placeholder="Tu correo electrónico"
-                                class="w-full bg-transparent border @error('email') border-red-500 @else border-gray-500 @enderror rounded-lg px-4 py-3 text-gray-200 placeholder-gray-400 focus:border-app-400 focus:outline-none">
+                            class="w-full bg-transparent border @error('email') border-red-500 @else border-gray-500 @enderror rounded-lg px-4 py-3 text-gray-200 placeholder-gray-400 focus:border-app-400 focus:outline-none">
                         @error('email')
                             <p class="text-red-400 text-sm mt-1">{{ $message }}</p>
                         @enderror
@@ -44,7 +45,7 @@
                                 +56
                             </div>
                             <input type="text" wire:model="phone" placeholder="Tu número de teléfono"
-                                    class="w-full bg-transparent border @error('phone') border-red-500 @else border-gray-500 @enderror rounded-r-lg px-4 py-3 text-gray-200 placeholder-gray-400 focus:border-app-400 focus:outline-none">
+                                class="w-full bg-transparent border @error('phone') border-red-500 @else border-gray-500 @enderror rounded-r-lg px-4 py-3 text-gray-200 placeholder-gray-400 focus:border-app-400 focus:outline-none">
                         </div>
                         @error('phone')
                             <p class="text-red-400 text-sm mt-1">{{ $message }}</p>
@@ -52,7 +53,7 @@
                     </div>
                     <div>
                         <input type="text" wire:model="subject" placeholder="Asunto de tu consulta"
-                                class="w-full bg-transparent border @error('subject') border-red-500 @else border-gray-500 @enderror rounded-lg px-4 py-3 text-gray-200 placeholder-gray-400 focus:border-app-400 focus:outline-none">
+                            class="w-full bg-transparent border @error('subject') border-red-500 @else border-gray-500 @enderror rounded-lg px-4 py-3 text-gray-200 placeholder-gray-400 focus:border-app-400 focus:outline-none">
                         @error('subject')
                             <p class="text-red-400 text-sm mt-1">{{ $message }}</p>
                         @enderror
@@ -62,14 +63,15 @@
                 <!-- Message -->
                 <div>
                     <textarea rows="5" wire:model="message" placeholder="Escribe tu mensaje aquí..."
-                                class="w-full bg-transparent border @error('message') border-red-500 @else border-gray-500 @enderror rounded-lg px-4 py-3 text-gray-200 placeholder-gray-400 focus:border-app-400 focus:outline-none"></textarea>
+                        class="w-full bg-transparent border @error('message') border-red-500 @else border-gray-500 @enderror rounded-lg px-4 py-3 text-gray-200 placeholder-gray-400 focus:border-app-400 focus:outline-none"></textarea>
                     @error('message')
                         <p class="text-red-400 text-sm mt-1">{{ $message }}</p>
                     @enderror
                 </div>
 
                 <p class="text-gray-400 mb-10">
-                    Completa el formulario y nos pondremos en contacto contigo lo antes posible para resolver tus dudas sobre nuestras soluciones energéticas.
+                    Completa el formulario y nos pondremos en contacto contigo lo antes posible para resolver tus dudas
+                    sobre nuestras soluciones energéticas.
                 </p>
 
                 <!-- Success Message -->
@@ -81,19 +83,21 @@
                 @endif
 
                 <!-- Submit button -->
-                <button type="submit"
-                        wire:loading.attr="disabled"
-                        wire:target="submit"
-                        class="w-full bg-app-400 text-black font-semibold py-3 rounded-lg hover:bg-app-500 transition disabled:opacity-50 disabled:cursor-not-allowed">
+                <button type="submit" wire:loading.attr="disabled" wire:target="submit"
+                    class="w-full bg-app-400 text-black font-semibold py-3 rounded-lg hover:bg-app-500 transition disabled:opacity-50 disabled:cursor-not-allowed">
                     <span wire:loading.remove wire:target="submit">ENVIAR MENSAJE</span>
                     <span wire:loading wire:target="submit">
-                    <span class="flex items-center justify-center gap-2">
-                        <svg class="animate-spin h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                        </svg>
-                        <span>Enviando...</span>
-                    </span>
+                        <span class="flex items-center justify-center gap-2">
+                            <svg class="animate-spin h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24">
+                                <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor"
+                                    stroke-width="4"></circle>
+                                <path class="opacity-75" fill="currentColor"
+                                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z">
+                                </path>
+                            </svg>
+                            <span>Enviando...</span>
+                        </span>
                     </span>
                 </button>
             </form>
@@ -104,50 +108,69 @@
             <div class="space-y-8">
 
                 <!-- Location -->
-                <div class="flex items-start gap-4" _data-aos="fade-up" _data-aos-delay="100">
-                    <svg class="text-app-400 w-6 h-6 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                    </svg>
-                    <div>
-                        <h4 class="font-semibold text-lg">Ubicación</h4>
-                        <p class="text-app-400">KLLG St, No.99, Pku City, ID 28289</p>
+                @if (setting('address'))
+                    <div class="flex items-start gap-4" _data-aos="fade-up" _data-aos-delay="100">
+                        <svg class="text-app-400 w-6 h-6 flex-shrink-0 mt-1" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
+                            </path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                        <div>
+                            <h4 class="font-semibold text-lg">Ubicación</h4>
+                            <p class="text-app-400">{{ setting('address') }}</p>
+                        </div>
                     </div>
-                </div>
-
+                @endif
                 <!-- Mail -->
-                <div class="flex items-start gap-4" _data-aos="fade-up" _data-aos-delay="200">
-                    <svg class="text-app-400 w-6 h-6 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
-                    </svg>
-                    <div>
-                        <h4 class="font-semibold text-lg">Correo</h4>
-                        <p class="text-app-400">hello@domainsite.com</p>
+                @if (setting('email'))
+                    <div class="flex items-start gap-4" _data-aos="fade-up" _data-aos-delay="200">
+                        <svg class="text-app-400 w-6 h-6 flex-shrink-0 mt-1" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                        <div>
+                            <h4 class="font-semibold text-lg">Correo</h4>
+                            <p class="text-app-400">{{ setting('email') }}</p>
+                        </div>
                     </div>
-                </div>
+                @endif
 
                 <!-- Phone -->
-                <div class="flex items-start gap-4" _data-aos="fade-up" _data-aos-delay="300">
-                    <svg class="text-app-400 w-6 h-6 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
-                    </svg>
-                    <div>
-                        <h4 class="font-semibold text-lg">Teléfono</h4>
-                        <p class="text-app-400">+62761-8523-398</p>
+                @if (setting('phone'))
+                    <div class="flex items-start gap-4" _data-aos="fade-up" _data-aos-delay="300">
+                        <svg class="text-app-400 w-6 h-6 flex-shrink-0 mt-1" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z">
+                            </path>
+                        </svg>
+                        <div>
+                            <h4 class="font-semibold text-lg">Teléfono</h4>
+                            <p class="text-app-400">{{ setting('phone') }}</p>
+                        </div>
                     </div>
-                </div>
+                @endif
 
-                <!-- Work Hours -->
-                <div class="flex items-start gap-4" _data-aos="fade-up" _data-aos-delay="400">
-                    <svg class="text-app-400 w-6 h-6 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                    </svg>
-                    <div>
-                        <h4 class="font-semibold text-lg">Horario de Trabajo</h4>
-                        <p class="text-app-400">Lun - Jue : 09:00 - 17:00</p>
+                @if (setting('schedule'))
+                    <!-- Work Hours -->
+                    <div class="flex items-start gap-4" _data-aos="fade-up" _data-aos-delay="400">
+                        <svg class="text-app-400 w-6 h-6 flex-shrink-0 mt-1" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z">
+                            </path>
+                        </svg>
+                        <div>
+                            <h4 class="font-semibold text-lg">Horario de Trabajo</h4>
+                            <p class="text-app-400">{{ setting('schedule') }}</p>
+                        </div>
                     </div>
-                </div>
-
+                @endif
                 <!-- Follow Us -->
                 {{--
                 <div class="pt-4" _data-aos="fade-up" _data-aos-delay="500">
@@ -184,4 +207,3 @@
         </div>
     </section>
 </div>
-

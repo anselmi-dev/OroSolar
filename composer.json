@@ -75,6 +75,15 @@
         ],
         "pre-package-uninstall": [
             "Illuminate\\Foundation\\ComposerScripts::prePackageUninstall"
+        ],
+        "deploy": [
+            "composer install --no-dev --optimize-autoloader",
+            "@php artisan migrate --force",
+            "@php artisan optimize:clear",
+            "npm install",
+            "npm run build",
+            "@php artisan optimize",
+            "@php artisan queue:restart"
         ]
     },
     "extra": {
