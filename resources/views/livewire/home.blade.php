@@ -12,7 +12,7 @@
         <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent"></div>
     </div>
 
-    <section class="max-w-7xl mx-auto relative z-10 mt-24">
+    <section class="max-w-7xl mx-auto relative z-10 mt-24 px-6">
         <div
             class="max-w-4xl bg-neutral-800/90 rounded-2xl px-14 py-16 relative"
             data-aos="fade-up"

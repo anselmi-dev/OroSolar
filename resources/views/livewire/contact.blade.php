@@ -1,5 +1,5 @@
-<div class="min-h-screen bg-black text-white py-20 px-10">
-    <div class="max-w-7xl mx-auto" _data-aos="fade-up">
+<div class="min-h-screen bg-black text-white py-20">
+    <div class="max-w-7xl mx-auto px-6" _data-aos="fade-up">
         <h1 class="text-5xl font-extrabold mb-8">Contáctanos</h1>
         <p class="text-neutral-400 text-lg leading-relaxed mb-5">
             Ponte en contacto con nosotros para cualquier pregunta o consulta sobre nuestras soluciones de energía
@@ -10,7 +10,7 @@
         </p>
     </div>
 
-    <section class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 py-10">
+    <section class="max-w-7xl mx-auto px-6 | grid md:grid-cols-2 gap-16 py-10">
 
         <!-- LEFT: FORM -->
         <div _data-aos="fade-right">

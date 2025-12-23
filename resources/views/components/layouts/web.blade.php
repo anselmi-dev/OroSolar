@@ -7,7 +7,7 @@
 
 <body class="bg-black text-white antialiased">
     <!-- NAVBAR -->
-    <header class="relative z-10 py-6 flex items-center justify-between max-w-7xl mx-auto">
+    <header class="relative z-10 px-6 py-6 flex items-center justify-between max-w-7xl mx-auto">
         <div class="flex items-center gap-2 text-lg font-bold">
             <a wire:navigate href="{{ route('home') }}">
                 {{-- <img src="{{ asset('logo/default-yellow.svg') }}" alt="Logo" class="w-full max-h-full"> --}}

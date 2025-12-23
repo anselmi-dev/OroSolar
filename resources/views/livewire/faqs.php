@@ -1,4 +1,4 @@
-<div class="min-h-screen bg-black text-white py-20 px-10">
+<div class="min-h-screen bg-black text-white py-20">
     <div class="max-w-7xl mx-auto">
         <!-- Header Section -->
         <div class="mb-16">
