@@ -126,6 +126,14 @@ class Settings extends Page implements HasForms
 
         Setting::set('color', $data['color']);
 
+        Setting::set('phone', $data['phone']);
+
+        Setting::set('email', $data['email']);
+
+        Setting::set('address', $data['address']);
+
+        Setting::set('schedule', $data['schedule']);
+
         // Guardar o eliminar favicon
         if (isset($data['favicon'])) {
             if ($data['favicon']) {
