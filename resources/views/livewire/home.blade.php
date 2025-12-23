@@ -18,15 +18,15 @@
             data-aos="fade-up"
         >
 
-            <span class="text-app-400 font-semibold">Energía Solar</span>
+            <span class="text-app-400 font-semibold z-1 relative">Energía Solar</span>
 
-            <h1 class="text-4xl font-extrabold mt-6 leading-tight">
+            <h1 class="text-4xl font-extrabold mt-6 leading-tight z-1 relative">
                 Energía solar y almacenamiento <br />
                 inteligente para que tu empresa <br />
                 nunca se detenga
             </h1>
 
-            <p class="text-2xl text-neutral-300 mt-6 leading-relaxed">
+            <p class="text-2xl text-neutral-300 mt-6 leading-relaxed z-1 relative">
                 Energía que reduce tus costos. Resiliencia que impulsa tu operación.
             </p>
 
