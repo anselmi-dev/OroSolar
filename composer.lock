@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c89501e870befe4ad6c5a5c978295989",
+    "content-hash": "91b672612d63c2dfff8f4fcf68dab3d0",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -3971,6 +3971,67 @@
                 "source": "https://github.com/Masterminds/html5-php/tree/2.10.0"
             },
             "time": "2025-07-25T09:04:22+00:00"
+        },
+        {
+            "name": "monishroy/visitor-tracking",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/monishroy/visitor-tracking.git",
+                "reference": "7e76466fad0304dfe532787e75cf68984588b062"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/monishroy/visitor-tracking/zipball/7e76466fad0304dfe532787e75cf68984588b062",
+                "reference": "7e76466fad0304dfe532787e75cf68984588b062",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^7.0",
+                "illuminate/support": "^8.0|^9.0|^10.0|^11.0|^12.0",
+                "php": ">=7.4 <8.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "MonishRoy\\VisitorTracking\\VisitorTrackingServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/Helpers/Visitor.php"
+                ],
+                "psr-4": {
+                    "MonishRoy\\VisitorTracking\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Monish Roy",
+                    "email": "monishroy87@gmail.com"
+                }
+            ],
+            "description": "A Laravel package for tracking website visitors",
+            "homepage": "https://github.com/monishroy/visitor-tracking",
+            "keywords": [
+                "laravel",
+                "laravel visitor tracking",
+                "tracking",
+                "user visitor tracking",
+                "visitor counter",
+                "visitor tracking"
+            ],
+            "support": {
+                "issues": "https://github.com/monishroy/visitor-tracking/issues",
+                "source": "https://github.com/monishroy/visitor-tracking/tree/v1.1.1"
+            },
+            "time": "2025-05-19T19:14:25+00:00"
         },
         {
             "name": "monolog/monolog",
