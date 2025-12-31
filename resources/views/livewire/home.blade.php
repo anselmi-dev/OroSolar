@@ -420,16 +420,46 @@
         <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-1 py-32 gap-20 items-center" data-aos="fade-up">
             <!-- LEFT CARD -->
             <div
+                x-data="{
+                    scrollY: 0,
+                    mouseX: 0,
+                    mouseY: 0,
+                    init() {
+                        let ticking = false;
+                        window.addEventListener('scroll', () => {
+                            if (!ticking) {
+                                window.requestAnimationFrame(() => {
+                                    const rect = this.$el.getBoundingClientRect();
+                                    const elementTop = rect.top + window.scrollY;
+                                    const scrollPosition = window.scrollY + window.innerHeight;
+                                    const elementCenter = elementTop + (rect.height / 2);
+                                    this.scrollY = (scrollPosition - elementCenter) * 0.05;
+                                    ticking = false;
+                                });
+                                ticking = true;
+                            }
+                        });
+                        this.$el.addEventListener('mousemove', (e) => {
+                            const rect = this.$el.getBoundingClientRect();
+                            this.mouseX = (e.clientX - rect.left - rect.width / 2) * 0.015;
+                            this.mouseY = (e.clientY - rect.top - rect.height / 2) * 0.015;
+                        });
+                        this.$el.addEventListener('mouseleave', () => {
+                            this.mouseX = 0;
+                            this.mouseY = 0;
+                        });
+                    }
+                }"
                 class="relative lg:col-span-2 rounded-2xl overflow-hidden bg-neutral-800/90 p-14"
                 data-aos="fade-right"
             >
                 <!-- Imagen de fondo -->
                 <img
-                    src="{{ asset('images/wind-turbine.png') }}"
-                    class="absolute inset-0 w-full h-full object-cover opacity-80 z-1"
-                    alt=""
+                    src="{{ asset('images/solar-8244680_1920.jpg') }}"
+                    class="absolute inset-0 w-full h-full object-cover opacity-80 z-1 transition-transform duration-300 ease-out"
+                    :style="`transform: translate(${mouseX}px, ${mouseY + scrollY}px) scale(1.4);`"
                 >
-                <div class="absolute inset-0 bg-[#1d1d1d]"></div>
+                <div class="absolute inset-0 bg-gradient-to-r from-black to-transparent z-1"></div>
 
                 <!-- Content -->
                 <div class="relative z-10">
@@ -687,3 +717,7 @@
         </div>
     </section> --}}
 </div>
+
+@push('scripts')
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+@endpush
