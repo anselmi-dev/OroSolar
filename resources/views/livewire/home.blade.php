@@ -78,54 +78,59 @@
         --}}
     </section>
 
-    <section class="max-w-7xl mx-auto _bg-black text-white py-32 px-10" data-aos="fade-up">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-20">
+    <section class="max-w-7xl mx-auto _bg-black text-white py-32 mt-20 px-10" data-aos="fade-up">
+        <div
+        x-data="{
+            scrollY: 0,
+            mouseX: 0,
+            mouseY: 0,
+            init() {
+                let ticking = false;
+                window.addEventListener('scroll', () => {
+                    if (!ticking) {
+                        window.requestAnimationFrame(() => {
+                            const rect = this.$el.getBoundingClientRect();
+                            const elementTop = rect.top + window.scrollY;
+                            const scrollPosition = window.scrollY + window.innerHeight;
+                            const elementCenter = elementTop + (rect.height / 2);
+                            this.scrollY = (scrollPosition - elementCenter) * 0.05;
+                            ticking = false;
+                        });
+                        ticking = true;
+                    }
+                });
+                this.$el.addEventListener('mousemove', (e) => {
+                    const rect = this.$el.getBoundingClientRect();
+                    this.mouseX = (e.clientX - rect.left - rect.width / 2) * 0.015;
+                    this.mouseY = (e.clientY - rect.top - rect.height / 2) * 0.015;
+                });
+                this.$el.addEventListener('mouseleave', () => {
+                    this.mouseX = 0;
+                    this.mouseY = 0;
+                });
+            }
+        }"
+        class="relative overflow-hidden rounded-2xl">
+            <img src="{{ asset('images/capataz-y-empresario-en-la-estacion-de-energia-solar.jpg') }}" alt="Home 1" class="w-full h-full object-cover absolute opacity-90 transition-transform duration-300 ease-out"
+                    :style="`transform: translate(${mouseX}px, ${mouseY + scrollY}px) scale(1.4);`">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-20 bg-gradient-to-r from-black to-transparent relative overflow-hidden p-10">
+                <div class="lg:col-span-full" data-aos="fade-left">
+                    <span class="text-app-400 font-semibold tracking-wide text-lg">
+                        Nuestra Propuesta
+                    </span>
 
-            <!-- LEFT BLOCKS -->
-            {{-- <div class="space-y-20" data-aos="fade-right">
+                    <h2 class="text-4xl lg:text-5xl font-extrabold mt-6 leading-tight">
+                        Diseñamos, instalamos y mantenemos <br class="hidden sm:block">
+                        soluciones fotovoltaicas y sistemas de <br class="hidden sm:block">
+                        almacenamiento (BESS)
+                    </h2>
 
-                <!-- Ahorro Inmediato -->
-                <div>
-                    <div class="flex items-center gap-4 mb-5">
-                        <span class="w-1 h-6 bg-app-400"></span>
-                        <h3 class="text-xl font-semibold">⚡ Ahorro Inmediato</h3>
-                    </div>
-
-                    <p class="text-neutral-400 leading-relaxed">
-                        Reducción de hasta 40% en tu cuenta eléctrica. Optimizamos el uso de energía solar, desplazamos consumos de horas punta y utilizamos baterías para reducir cargos por potencia, demanda y energía.
+                    <p class="mt-8 max-w-2xl text-neutral-400 leading-relaxed text-xl">
+                        Disminuimos tu gasto energético, mejoramos tu eficiencia operativa y aseguramos continuidad eléctrica 24/7. Sistemas escalables que acompañan el crecimiento de tu empresa, desde pequeña industria hasta infraestructura crítica.
                     </p>
                 </div>
 
-                <!-- Continuidad Garantizada -->
-                <div>
-                    <div class="flex items-center gap-4 mb-5">
-                        <span class="w-1 h-6 bg-app-400"></span>
-                        <h3 class="text-xl font-semibold">🔋 Continuidad Garantizada</h3>
-                    </div>
-
-                    <p class="text-neutral-400 leading-relaxed">
-                        Eliminación de paradas por cortes eléctricos. Con almacenamiento inteligente y respaldo automático, tu operación sigue funcionando incluso en interrupciones de red.
-                    </p>
-                </div>
-            </div> --}}
-
-            <!-- RIGHT BIG CONTENT -->
-            <div class="lg:col-span-full" data-aos="fade-left">
-                <span class="text-app-400 font-semibold tracking-wide text-lg">
-                    Nuestra Propuesta
-                </span>
-
-                <h2 class="text-4xl lg:text-5xl font-extrabold mt-6 leading-tight">
-                    Diseñamos, instalamos y mantenemos <br class="hidden sm:block">
-                    soluciones fotovoltaicas y sistemas de <br class="hidden sm:block">
-                    almacenamiento (BESS)
-                </h2>
-
-                <p class="mt-8 max-w-2xl text-neutral-400 leading-relaxed text-xl">
-                    Disminuimos tu gasto energético, mejoramos tu eficiencia operativa y aseguramos continuidad eléctrica 24/7. Sistemas escalables que acompañan el crecimiento de tu empresa, desde pequeña industria hasta infraestructura crítica.
-                </p>
             </div>
-
         </div>
     </section>
 
